@@ -1,0 +1,101 @@
+
+/*-------- Mobile/tablet Styling --------*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgba(255, 255, 255, 0.7);
+    display: inline-block;
+    font-size: 1.175rem;
+    margin: 10px 0 10px 20px;
+}
+
+.navbar {
+    font-size: 1.15rem;
+    background-color: rgb(65, 65, 65);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.main_nav {
+    list-style-type: none;
+    display: none;
+}
+
+.main_nav li {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.nav_link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar_toggle {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    top: 10px;
+    right: 20px;
+    font-size: 1.4rem;
+}
+
+.active {
+    display: block;
+}
+
+
+/*-------- Desktop Styling --------*/
+
+@media screen and (min-width: 768px) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0px;
+        height: 70px;
+        align-items: center;
+    }
+
+    .main_nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-right: 30px;
+    }
+
+    .main_nav li {
+        margin: 0;
+    }
+
+    .nav_link {
+        margin-left: 15px;
+        padding: 5px;
+    }
+
+    h1 {
+        padding: 5px;
+    }
+
+    .navbar_toggle {
+        display: none;
+    }
+
+    a:hover,
+    h1:hover {
+        border: 1px solid rgba(255, 255, 255, 0.7);
+        border-radius: 5%;
+        box-shadow: 5px 5px grey;
+    }
+}
